@@ -1,0 +1,12 @@
+.container {
+    border: 1px solid;
+    padding: 5px;
+}
+
+.text-long {
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+}

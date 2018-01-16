@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  padding: 20px 10px;
+  margin: 20px 0;
+  font-size: 2em;
+  color: white;
+}
+
+.h-blue {
+  background: cornflowerblue;
+  clip-path: polygon(0 0, 70% 0%, 60% 100%, 0% 100%);
+}
+
+.h-black {
+  background: black;
+  text-align: right;
+  clip-path: polygon(40% 0, 100% 0%, 100% 100%, 30% 100%);
+}
+
+p {
+  margin: 10px 50px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.p-red {
+  padding: 20px;
+  margin: 30px 50px;
+  padding-bottom: 50px;
+  background: pink;
+  color: black;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 85%, 75% 100%, 50% 80%, 0% 75%);
+}

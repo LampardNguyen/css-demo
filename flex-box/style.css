@@ -1,0 +1,377 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+input {
+    font-size: 14px;
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    background-color: #BBB;
+    font-family: Helvetica, sans-serif;
+    padding-bottom: 100px;
+}
+
+h2,
+h3 {
+    margin: 0 0 .75em 0;
+}
+
+
+/* first example */
+
+.container {
+    max-width: 750px;
+    margin: 20px auto 0 auto;
+    padding: 30px;
+    background-color: #FFF;
+}
+
+.form-row {
+    padding: 10px 0;
+    display: flex;
+}
+
+.form-row label {
+    padding-right: 10px;
+}
+
+.form-row input {
+    flex: 1;
+}
+
+
+/* second example */
+
+.column-layout {
+    max-width: 1300px;
+    background-color: #FFF;
+    margin: 40px auto 0 auto;
+    line-height: 1.65;
+    padding: 20px 50px;
+    display: flex;
+}
+
+.main-column {
+    flex: 3;
+    order: 2;
+}
+
+.sidebar-one {
+    flex: 1;
+    order: 1;
+}
+
+.sidebar-two {
+    flex: 1;
+    order: 3;
+}
+
+
+/* third example */
+
+.call-outs-container {
+    max-width: 1400px;
+    margin: 40px auto 0 auto;
+}
+
+.call-out {
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 900px) {
+    .responsive.call-outs-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .responsive .call-out {
+        flex: 1;
+    }
+}
+
+
+/*align-items start-----------------------------*/
+
+.align-items-start.call-outs-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.align-items-start .call-out {
+    flex: 1;
+}
+
+
+/*align-items end-----------------------------------*/
+
+.align-items-end.call-outs-container {
+    display: flex;
+    align-items: flex-end;
+}
+
+.align-items-end .call-out {
+    flex: 1;
+}
+
+
+/*align-items center---------------------------------*/
+
+.align-items-center.call-outs-container {
+    display: flex;
+    align-items: center;
+}
+
+.align-items-center .call-out {
+    flex: 1;
+}
+
+
+/*justify content start------------------------------*/
+
+.justify-content-start.call-outs-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.justify-content-start .call-out {
+    flex-basis: 30%;
+}
+
+
+/*justify content end------------------------------*/
+
+.justify-content-end.call-outs-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.justify-content-end .call-out {
+    flex-basis: 30%;
+}
+
+
+/*justify content center------------------------------*/
+
+.justify-content-center.call-outs-container {
+    display: flex;
+    justify-content: center;
+}
+
+.justify-content-center .call-out {
+    flex-basis: 30%;
+}
+
+
+/*justify content spacing between------------------------------*/
+
+.justify-content-spacing-between.call-outs-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.justify-content-spacing-between .call-out {
+    flex-basis: 30%;
+}
+
+
+/*justify content spacing around------------------------------*/
+
+.justify-content-spacing-around.call-outs-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.justify-content-spacing-around .call-out {
+    flex-basis: 20%;
+}
+
+
+.call-out:nth-child(1) {
+    background-color: #c0dbe2;
+}
+
+.call-out:nth-child(2) {
+    background-color: #cdf1c3;
+}
+
+.call-out:nth-child(3) {
+    background-color: #ccb9da;
+}
+
+
+/* fourth example */
+
+.fixed-size-container {
+    max-width: 1400px;
+    margin: 40px auto 0 auto;
+    background-color: #FFF;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.fixed-size {
+    width: 150px;
+    height: 100px;
+    background-color: #990b47;
+    color: #FFF;
+    line-height: 100px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.wrap.fixed-size-container {
+    flex-wrap: wrap;
+}
+
+.wrap-reverse.fixed-size-container {
+    flex-wrap: wrap-reverse;
+}
+.wrap-align-content{
+    flex-wrap: wrap;
+    height: 500px;
+}
+
+.wrap-align-content.start{
+    align-content: flex-start;
+}
+
+.wrap-align-content.end{
+    align-content: flex-end;
+}
+
+.wrap-align-content.center{
+    align-content: center;
+}
+
+.wrap-align-content.space-between{
+    align-content: space-between;
+}
+
+.wrap-align-content.space-around{
+    align-content: space-around;
+}
+/* fifth example */
+
+.banner {
+    height: 400px;
+    max-width: 700px;
+    margin: 40px auto 40px auto;
+    background-color: #2a2a2a;
+    display: flex;
+}
+
+.center-me {
+    color: #FFF;
+    font-size: 50px;
+    margin: auto;
+}
+
+
+/* sixth example */
+
+.equal-height-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.first {
+    background-color: #FFF;
+    padding: 20px;
+    flex: 1;
+}
+
+.second {
+    background-color: yellow;
+    flex: 1;
+    display: flex;
+}
+
+.second-a {
+    background-color: #c0dbe2;
+    flex: 1;
+}
+
+.second-b {
+    background-color: #cdf1c3;
+    flex: 1;
+}
+
+
+/*direction row*/
+
+.row .second {
+    flex-direction: row;
+}
+
+
+/*direction row reverse*/
+
+.row-reverse .second {
+    flex-direction: row-reverse;
+}
+
+
+/*direction column*/
+
+.column .second {
+    flex-direction: column;
+}
+
+
+/*direction row reverse*/
+
+.column-reverse .second {
+    flex-direction: column-reverse;
+}
+
+
+/*align-self----------------------------------*/
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    height: 250px;
+    background-color: lightgrey;
+}
+
+.flex-item {
+    background-color: cornflowerblue;
+    flex: 1;
+    min-height: 100px;
+    margin: 10px;
+}
+
+.item1 {
+    -webkit-align-self: flex-start;
+    align-self: flex-start;
+}
+
+.item2 {
+    -webkit-align-self: flex-end;
+    align-self: flex-end;
+}
+
+.item3 {
+    -webkit-align-self: center;
+    align-self: center;
+}
+
+.item4 {
+    -webkit-align-self: baseline;
+    align-self: baseline;
+}
+
+.item5 {
+    -webkit-align-self: stretch;
+    align-self: stretch;
+}

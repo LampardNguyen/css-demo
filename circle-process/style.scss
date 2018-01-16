@@ -1,0 +1,121 @@
+.chart {
+    $totalCircle: 628;
+    /*calc(100*2*3.14);*/
+    $unit: $totalCircle/100;
+    * {
+        box-sizing: border-box;
+    }
+    position: relative;
+    display: block;
+    color: #999;
+    font-size: 20px;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    margin: 12px auto 15px;
+    figcaption {
+        width: 233px;
+        height: 233px;
+        border: 34px solid #d4d4d4;
+        border-radius: 50%;
+        margin: 0px auto;
+        position: relative;
+        top: 8px;
+        left: 0px;
+        .inset {
+            width: 120px;
+            height: 120px;
+            position: absolute;
+            margin-left: 23px;
+            margin-top: 22px;
+            background-color: #eff1f5;
+            border-radius: 50%;
+            .percentage {
+                width: 120px;
+                height: 120px;
+                position: absolute;
+                background-color: #FFFFFF;
+                border-radius: 50%;
+                border: 5px solid #e5e5e5;
+                #use-counts {
+                    font-size: 40px;
+                    line-height: 49px;
+                    color: #50240c;
+                    text-align: center;
+                    font-weight: bold;
+                    margin: 10px 0 0;
+                }
+                #stamp-rank-max {
+                    display: block;
+                    margin: 0 auto;
+                    width: 65%;
+                    font-size: 16px;
+                    line-height: 50px;
+                    color: #50240c;
+                    text-align: center;
+                    border-top: 1px solid;
+                    .number-stamp {
+                        font-size: 23px;
+                        display: inline-block;
+                        vertical-align: 2px;
+                    }
+                    .stamp-size {
+                        font-size: 14px;
+                        display: inline-block;
+                        vertical-align: 4px;
+                        margin-left: -3px;
+                    }
+                }
+            }
+        }
+    }
+    svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transform: rotateZ(-90deg);
+        transform: rotateZ(-90deg);
+        .outer {
+            fill: transparent;
+            stroke: #333;
+            stroke-width: 34px;
+            stroke-dasharray: $totalCircle;
+            -webkit-transition: stroke-dashoffset 1s;
+            transition: stroke-dashoffset 1s;
+            -webkit-animation-play-state: running;
+            /* firefox bug fix - won't rotate at 90deg angles*/
+            -moz-transform: rotate(-89deg) translateX(-190px);
+            stroke: #3f3f3f;
+        }
+    }
+    @for $i from 0 to 101 {
+        &[data-percent="#{$i}"] {
+            .outer {
+                @if $i>0 {
+                    stroke-dasharray: $totalCircle + 1;
+                }
+                stroke-dashoffset: $totalCircle - $unit*$i;
+                -webkit-animation: show#{$i} 1s;
+                animation: show#{$i} 1s;
+            }
+        }
+        @-webkit-keyframes show#{$i} {
+            from {
+                stroke-dashoffset: $totalCircle;
+            }
+            to {
+                stroke-dashoffset: $totalCircle - $unit*$i;
+            }
+        }
+        @keyframes show#{$i} {
+            from {
+                stroke-dashoffset: $totalCircle;
+            }
+            to {
+                stroke-dashoffset: $totalCircle - $unit*$i;
+            }
+        }
+    }
+}

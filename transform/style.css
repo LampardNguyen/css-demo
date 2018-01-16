@@ -1,0 +1,442 @@
+.container {
+    text-align: center;
+}
+
+.element {
+    display: inline-block;
+    background-color: #0074d9;
+    height: 100px;
+    width: 100px;
+    font-size: 1px;
+    padding: 1px;
+    color: white;
+    margin-right: 5px;
+    margin-left: 5px;
+    opacity: .7;
+}
+
+.element1 {
+    display: inline-block;
+    background-color: #0074d9;
+    height: 100px;
+    width: 100px;
+    color: white;
+    text-align: center;
+    opacity: .7;
+    font-family: Verdana, sans-serif;
+    border: 3px solid rgba(0, 0, 0, .3);
+}
+
+.skewx {
+    -webkit-animation: skewx 3s infinite;
+    animation: skewx 3s infinite;
+    -webkit-transform: skew(20deg);
+    transform: skew(20deg);
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+.skewy {
+    -webkit-animation: skewy 3s infinite;
+    animation: skewy 3s infinite;
+    -webkit-transform: skew(20deg);
+    transform: skew(20deg);
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+.roll {
+    -webkit-animation: roll 3s infinite;
+    animation: roll 3s infinite;
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+
+.rotatex {
+    -webkit-transform: rotateX(40deg);
+    transform: rotateX(40deg);
+    -webkit-animation: X 2s infinite;
+    animation: X 2s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+.rotatey {
+    -webkit-transform: rotateX(40deg);
+    transform: rotateX(40deg);
+    -webkit-animation: Y 2s infinite;
+    animation: Y 2s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+.rotatez {
+    -webkit-transform: rotateX(40deg);
+    transform: rotateX(40deg);
+    -webkit-animation: Z 2s infinite;
+    animation: Z 2s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+@keyframes skewx {
+    0% {
+        -webkit-transform: skewX(20deg);
+        transform: skewX(20deg);
+    }
+    100% {
+        -webkit-transform: skewX(-20deg);
+        transform: skewX(-20deg);
+    }
+}
+
+@keyframes skewy {
+    0% {
+        -webkit-transform: skewY(20deg);
+        transform: skewY(20deg);
+    }
+    100% {
+        -webkit-transform: skewY(-20deg);
+        transform: skewY(-20deg);
+    }
+}
+
+@keyframes roll {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes X {
+    0% {
+        -webkit-transform: rotateX(0);
+        transform: rotateX(0);
+    }
+    100% {
+        -webkit-transform: rotateX(50deg);
+        transform: rotateX(50deg);
+    }
+}
+
+@keyframes Y {
+    0% {
+        -webkit-transform: rotateY(0);
+        transform: rotateY(0);
+    }
+    100% {
+        -webkit-transform: rotateY(70deg);
+        transform: rotateY(70deg);
+    }
+}
+
+@keyframes Z {
+    0% {
+        -webkit-transform: rotateZ(0);
+        transform: rotateZ(0);
+    }
+    100% {
+        -webkit-transform: rotateZ(100deg);
+        transform: rotateZ(100deg);
+    }
+}
+
+
+/*flip animate*/
+
+#flip-container {
+    position: relative;
+    margin: 10px auto;
+    width: 300px;
+    height: 300px;
+    z-index: 1;
+}
+
+.face.back {
+    display: none;
+}
+
+
+/*@media all and (-webkit-transform-3d) {*/
+
+
+/* Use the media query to determine if 3D transforms are supported */
+
+#flip-container {
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -ms-perspective: 1000;
+    perspective: 1000;
+}
+
+#flip-card {
+    width: 100%;
+    height: 100%;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: -webkit-transform 1s;
+    -moz-transition: -moz-transform 1s;
+    -ms-transition: -ms-transform 1s;
+    -o-transition: -o-transform 1s;
+    transition: transform 1s;
+}
+
+#flip-container:hover #flip-card {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.face.back {
+    display: block;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 12pt;
+    color: white;
+    text-align: center;
+    background-color: #835A99;
+    border-radius: 10px;
+}
+
+
+/*}*/
+
+
+/*flip animation auto*/
+
+#flip-container.auto #flip-card {
+    -webkit-animation: autoFlip 3s infinite;
+    animation: autoFlip 3s infinite;
+}
+
+@keyframes autoFlip {
+    0% {
+        -webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+    }
+    50% {
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+    }
+    100% {
+        -webkit-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+    }
+}
+
+.container1 {
+    position: relative;
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -ms-perspective: 1000;
+    -o-perspective: 1000;
+    margin: 0 0 20px 0;
+    display: inline-block;
+}
+
+.card {
+    width: 200px;
+    height: 50px;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: 0.5s;
+    -moz-transform-style: preserve-3d;
+    -moz-transition: 0.5s;
+    -ms-transform-style: preserve-3d;
+    -ms-transition: 0.5s;
+    -o-transform-style: preserve-3d;
+    transition: 0.5s;
+}
+
+.container1:hover .card {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.face1 {
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    line-height: 50px;
+    text-align: center;
+}
+
+.no-hide .face1 {
+    -webkit-backface-visibility: visible;
+    -moz-backface-visibility: visible;
+    -ms-backface-visibility: visible;
+    backface-visibility: visible;
+}
+
+.front1 {
+    background: red;
+    z-index: 10;
+}
+
+.back1 {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    background: green;
+}
+
+.container1:hover .front1 {
+    z-index: 0;
+}
+
+
+/*flip card2*/
+
+.container2 {
+    width: 200px;
+    height: 260px;
+    position: relative;
+    margin: 0 auto 40px;
+    border: 1px solid #CCC;
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    -o-perspective: 800px;
+    perspective: 800px;
+}
+
+#card2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-transition: -webkit-transform 1s;
+    -moz-transition: -moz-transform 1s;
+    -o-transition: -o-transform 1s;
+    transition: transform 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    animation: flip-card-2 3s infinite;
+    -webkit-animation: flip-card-2 3s infinite;
+}
+
+@keyframes flip-card-2 {
+    0% {
+        -webkit-transform: rotateY(0);
+        -moz-transform: rotateY(0);
+        -ms-transform: rotateY(0);
+        -o-transform: rotateY(0);
+        transform: rotateY(0deg);
+    }
+    50% {
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+    }
+    100% {
+        -webkit-transform: rotateY(360deg);
+        -moz-transform: rotateY(360deg);
+        -ms-transform: rotateY(360deg);
+        -o-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+    }
+}
+
+#card2.slide {
+    animation: flip-card-slide 3s infinite;
+    -webkit-animation: flip-card-slide 3s infinite;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -ms-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+@keyframes flip-card-slide {
+    0% {
+        -webkit-transform: translateX(0) rotateY(0deg);
+        -moz-transform: translateX(0) rotateY(0deg);
+        -ms-transform: translateX(0) rotateY(0deg);
+        -o-transform: translateX(0) rotateY(0deg);
+        transform: translateX(0) rotateY(0deg);
+    }
+    50% {
+        -webkit-transform: translateX(100%) rotateY(180deg);
+        -moz-transform: translateX(100%) rotateY(180deg);
+        -ms-transform: translateX(100%) rotateY(180deg);
+        -o-transform: translateX(100%) rotateY(180deg);
+        transform: translateX(100%) rotateY(180deg);
+    }
+    100% {
+        -webkit-transform: translateX(0%) rotateY(360deg);
+        -moz-transform: translateX(0%) rotateY(360deg);
+        -ms-transform: translateX(0%) rotateY(360deg);
+        -o-transform: translateX(0%) rotateY(360deg);
+        transform: translateX(0%) rotateY(360deg);
+    }
+}
+
+#card2 figure {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 260px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 140px;
+    position: absolute;
+    margin: 0;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+#card2 .front2 {
+    background: red;
+}
+
+#card2 .back2 {
+    background: blue;
+    -webkit-transform: rotateY( 180deg);
+    -moz-transform: rotateY( 180deg);
+    -o-transform: rotateY( 180deg);
+    transform: rotateY( 180deg);
+}

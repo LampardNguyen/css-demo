@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>flex-box</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- first example -->
+    <h1>flex and flex 1 for item</h1>
+    <div class="container">
+        <form action="">
+            <div class="form-row">
+                <label for="name">Name:</label>
+                <input type="text" id="name">
+            </div>
+            <div class="form-row">
+                <label for="favColor">Favorite Color:</label>
+                <input type="text" id="favColor">
+            </div>
+        </form>
+    </div>
+    <!-- second example -->
+    <h1>flex, order column</h1>
+    <div class="column-layout">
+        <div class="main-column">
+            <h2>Main Column</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam voluptatibus soluta, consequuntur, reiciendis
+                debitis omnis fugiat libero pariatur amet laudantium minima consectetur tenetur. Repudiandae, autem, voluptate
+                modi deleniti sequi voluptatum!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi earum fugit veniam amet quae sint vitae numquam
+                dolore sunt quod a odio officia voluptate doloribus, at. Cum quasi mollitia eaque. Voluptatibus soluta, consequuntur,
+                reiciendis debitis omnis fugiat libero pariatur amet laudantium.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam voluptatibus soluta, consequuntur, reiciendis
+                debitis omnis fugiat libero pariatur amet laudantium minima consectetur tenetur. Repudiandae, autem, voluptate
+                modi deleniti sequi voluptatum!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi earum fugit veniam amet quae sint vitae numquam
+                dolore sunt quod a odio officia voluptate doloribus, at. Cum quasi mollitia eaque.</p>
+        </div>
+
+        <div class="sidebar-one">
+            <h3>Sidebar One</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum modi nisi tenetur sint dignissimos nulla,
+                blanditiis nesciunt.</p>
+        </div>
+
+        <div class="sidebar-two">
+            <h3>Sidebar Two</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum modi nisi tenetur sint dignissimos nulla,
+                blanditiis nesciunt.</p>
+        </div>
+    </div>
+    <!-- third example -->
+    <h1>flex responsive</h1>
+    <div class="responsive call-outs-container">
+        <div class="call-out">
+            <h4>Feature 1</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam omnis sit
+                consectetur nobis molestias! Explicabo deserunt. Consectetur adipisicing elit. Quibusdam obcaecati vel, placeat
+                numquam placeat numquam omnis sit consectetur.</p>
+        </div>
+
+        <div class="call-out">
+            <h4>Feature 2</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam omnis sit
+                consectetur nobis molestias! Explicabo deserunt placeat numquam omnis.</p>
+        </div>
+
+        <div class="call-out">
+            <h4>Feature 3</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam omnis sit.</p>
+        </div>
+    </div>
+    <!-- third example -->
+    <h1>flex grow responsive</h1>
+    <div class="responsive call-outs-container">
+        <div class="call-out"  style="flex-grow: 2;">
+            <h4>Feature 1</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam omnis sit
+                consectetur nobis molestias! Explicabo deserunt. Consectetur adipisicing elit. Quibusdam obcaecati vel, placeat
+                numquam placeat numquam omnis sit consectetur.</p>
+        </div>
+
+        <div class="call-out">
+            <h4>Feature 2</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam omnis sit
+                consectetur nobis molestias! Explicabo deserunt placeat numquam omnis.</p>
+        </div>
+
+        <div class="call-out">
+            <h4>Feature 3</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam omnis sit.</p>
+        </div>
+    </div>
+    <!-- third example -->
+    <h1>flex align-items: flex-start</h1>
+    <div class="align-items-start call-outs-container">
+        <div class="call-out">
+            <h4>Feature 1</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam omnis sit
+                consectetur nobis molestias! Explicabo deserunt. Consectetur adipisicing elit. Quibusdam obcaecati vel, placeat
+                numquam placeat numquam omnis sit consectetur.</p>
+        </div>
+
+        <div class="call-out">
+            <h4>Feature 2</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam omnis sit
+                consectetur nobis molestias! Explicabo deserunt placeat numquam omnis.</p>
+        </div>
+
+        <div class="call-out">
+            <h4>Feature 3</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam omnis sit.</p>
+        </div>
+    </div>
+    <!-- third example -->
+    <h1>flex align-items: flex-end</h1>
+    <div class="align-items-end call-outs-container">
+        <div class="call-out">
+            <h4>Feature 1</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam omnis sit
+                consectetur nobis molestias! Explicabo deserunt. Consectetur adipisicing elit. Quibusdam obcaecati vel, placeat
+                numquam placeat numquam omnis sit consectetur.</p>
+        </div>
+
+        <div class="call-out">
+            <h4>Feature 2</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam omnis sit
+                consectetur nobis molestias! Explicabo deserunt placeat numquam omnis.</p>
+        </div>
+
+        <div class="call-out">
+            <h4>Feature 3</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam omnis sit.</p>
+        </div>
+    </div>
+    <!-- third example -->
+    <h1>flex align-items: center</h1>
+    <div class="align-items-center call-outs-container">
+        <div class="call-out">
+            <h4>Feature 1</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam omnis sit
+                consectetur nobis molestias! Explicabo deserunt. Consectetur adipisicing elit. Quibusdam obcaecati vel, placeat
+                numquam placeat numquam omnis sit consectetur.</p>
+        </div>
+
+        <div class="call-out">
+            <h4>Feature 2</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam omnis sit
+                consectetur nobis molestias! Explicabo deserunt placeat numquam omnis.</p>
+        </div>
+
+        <div class="call-out">
+            <h4>Feature 3</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam omnis sit.</p>
+        </div>
+    </div>
+
+    <!-- third example -->
+    <h1>flex justify-content: flex-start</h1>
+    <div class="justify-content-start call-outs-container">
+        <div class="call-out">
+            <h4>Feature 1</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam omnis sit
+                consectetur nobis molestias! Explicabo deserunt. Consectetur adipisicing elit. Quibusdam obcaecati vel, placeat
+                numquam placeat numquam omnis sit consectetur.</p>
+        </div>
+
+        <div class="call-out">
+            <h4>Feature 2</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam omnis sit
+                consectetur nobis molestias! Explicabo deserunt placeat numquam omnis.</p>
+        </div>
+
+        <div class="call-out">
+            <h4>Feature 3</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam omnis sit.</p>
+        </div>
+    </div>
+    <!-- third example -->
+    <h1>flex justify-content: flex-end</h1>
+    <div class="justify-content-end call-outs-container">
+        <div class="call-out">
+            <h4>Feature 1</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam omnis sit
+                consectetur nobis molestias! Explicabo deserunt. Consectetur adipisicing elit. Quibusdam obcaecati vel, placeat
+                numquam placeat numquam omnis sit consectetur.</p>
+        </div>
+
+        <div class="call-out">
+            <h4>Feature 2</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam omnis sit
+                consectetur nobis molestias! Explicabo deserunt placeat numquam omnis.</p>
+        </div>
+
+        <div class="call-out">
+            <h4>Feature 3</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam omnis sit.</p>
+        </div>
+    </div>
+    <!-- third example -->
+    <h1>flex justify-content: center</h1>
+    <div class="justify-content-center call-outs-container">
+        <div class="call-out">
+            <h4>Feature 1</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam omnis sit
+                consectetur nobis molestias! Explicabo deserunt. Consectetur adipisicing elit. Quibusdam obcaecati vel, placeat
+                numquam placeat numquam omnis sit consectetur.</p>
+        </div>
+
+        <div class="call-out">
+            <h4>Feature 2</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam omnis sit
+                consectetur nobis molestias! Explicabo deserunt placeat numquam omnis.</p>
+        </div>
+
+        <div class="call-out">
+            <h4>Feature 3</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam omnis sit.</p>
+        </div>
+    </div>
+    <!-- third example -->
+    <h1>flex justify-content: spacing between</h1>
+    <div class="justify-content-spacing-between call-outs-container">
+        <div class="call-out">
+            <h4>Feature 1</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam omnis sit
+                consectetur nobis molestias! Explicabo deserunt. Consectetur adipisicing elit. Quibusdam obcaecati vel, placeat
+                numquam placeat numquam omnis sit consectetur.</p>
+        </div>
+
+        <div class="call-out">
+            <h4>Feature 2</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam omnis sit
+                consectetur nobis molestias! Explicabo deserunt placeat numquam omnis.</p>
+        </div>
+
+        <div class="call-out">
+            <h4>Feature 3</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam omnis sit.</p>
+        </div>
+    </div>
+    <!-- third example -->
+    <h1>flex justify-content: spacing around</h1>
+    <div class="justify-content-spacing-around call-outs-container">
+        <div class="call-out">
+            <h4>Feature 1</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam omnis sit
+                consectetur nobis molestias! Explicabo deserunt. Consectetur adipisicing elit. Quibusdam obcaecati vel, placeat
+                numquam placeat numquam omnis sit consectetur.</p>
+        </div>
+
+        <div class="call-out">
+            <h4>Feature 2</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam omnis sit
+                consectetur nobis molestias! Explicabo deserunt placeat numquam omnis.</p>
+        </div>
+
+        <div class="call-out">
+            <h4>Feature 3</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam omnis sit.</p>
+        </div>
+    </div>
+    <!-- fourth example -->
+    <h1>flex wrap (resize window to see)</h1>
+    <div class="wrap fixed-size-container">
+        <div class="fixed-size">1</div>
+        <div class="fixed-size">2</div>
+        <div class="fixed-size">3</div>
+        <div class="fixed-size">4</div>
+        <div class="fixed-size">5</div>
+    </div>
+
+    <!-- fourth example -->
+    <h1>flex wrap reverse (resize window to see)</h1>
+    <div class="wrap-reverse fixed-size-container">
+        <div class="fixed-size">1</div>
+        <div class="fixed-size">2</div>
+        <div class="fixed-size">3</div>
+        <div class="fixed-size">4</div>
+        <div class="fixed-size">5</div>
+    </div>
+
+    <!-- fourth example -->
+    <h1>flex wrap : align-content : start (resize window to see)</h1>
+    <div class="wrap-align-content start fixed-size-container">
+        <div class="fixed-size">1</div>
+        <div class="fixed-size">2</div>
+        <div class="fixed-size">3</div>
+        <div class="fixed-size">4</div>
+        <div class="fixed-size">5</div>
+    </div>
+
+    <!-- fourth example -->
+    <h1>flex wrap : align-content : end (resize window to see)</h1>
+    <div class="wrap-align-content end fixed-size-container">
+        <div class="fixed-size">1</div>
+        <div class="fixed-size">2</div>
+        <div class="fixed-size">3</div>
+        <div class="fixed-size">4</div>
+        <div class="fixed-size">5</div>
+    </div>
+
+    <!-- fourth example -->
+    <h1>flex wrap : align-content : center (resize window to see)</h1>
+    <div class="wrap-align-content center fixed-size-container">
+        <div class="fixed-size">1</div>
+        <div class="fixed-size">2</div>
+        <div class="fixed-size">3</div>
+        <div class="fixed-size">4</div>
+        <div class="fixed-size">5</div>
+    </div>
+
+    <!-- fourth example -->
+    <h1>flex wrap : align-content : space-between (resize window to see)</h1>
+    <div class="wrap-align-content space-between fixed-size-container">
+        <div class="fixed-size">1</div>
+        <div class="fixed-size">2</div>
+        <div class="fixed-size">3</div>
+        <div class="fixed-size">4</div>
+        <div class="fixed-size">5</div>
+    </div>
+
+    <!-- fourth example -->
+    <h1>flex wrap : align-content : space-around (resize window to see)</h1>
+    <div class="wrap-align-content space-around fixed-size-container">
+        <div class="fixed-size">1</div>
+        <div class="fixed-size">2</div>
+        <div class="fixed-size">3</div>
+        <div class="fixed-size">4</div>
+        <div class="fixed-size">5</div>
+    </div>
+
+    <!-- fifth example -->
+    <h1>center item</h1>
+    <div class="banner">
+        <div class="center-me">Center Me Plz</div>
+    </div>
+
+    <!-- sixth example -->
+    <h1>flex direction row</h1>
+    <div class="row equal-height-container">
+        <div class="first">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quasi similique amet voluptatem molestiae nostrum
+                ab nesciunt blanditiis repellendus quos, sequi sunt, dolorem quis facilis mollitia nemo modi doloribus quo.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quisquam, veritatis ducimus, vero magnam hic
+                quia pariatur asperiores laudantium quod nobis perspiciatis, expedita quo reprehenderit quasi iusto ullam
+                error reiciendis.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quasi similique amet voluptatem molestiae nostrum
+                ab nesciunt blanditiis repellendus quos, sequi sunt, dolorem quis facilis mollitia nemo modi doloribus quo.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quisquam, veritatis ducimus, vero magnam hic
+                quia pariatur asperiores laudantium quod nobis perspiciatis, expedita quo reprehenderit quasi iusto ullam
+                error reiciendis.</p>
+        </div>
+
+        <div class="second">
+            <div class="second-a">A</div>
+            <div class="second-b">B</div>
+        </div>
+    </div>
+    <!-- sixth example -->
+    <h1>flex direction row reverse</h1>
+    <div class="row-reverse equal-height-container">
+        <div class="first">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quasi similique amet voluptatem molestiae nostrum
+                ab nesciunt blanditiis repellendus quos, sequi sunt, dolorem quis facilis mollitia nemo modi doloribus quo.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quisquam, veritatis ducimus, vero magnam hic
+                quia pariatur asperiores laudantium quod nobis perspiciatis, expedita quo reprehenderit quasi iusto ullam
+                error reiciendis.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quasi similique amet voluptatem molestiae nostrum
+                ab nesciunt blanditiis repellendus quos, sequi sunt, dolorem quis facilis mollitia nemo modi doloribus quo.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quisquam, veritatis ducimus, vero magnam hic
+                quia pariatur asperiores laudantium quod nobis perspiciatis, expedita quo reprehenderit quasi iusto ullam
+                error reiciendis.</p>
+        </div>
+
+        <div class="second">
+            <div class="second-a">A</div>
+            <div class="second-b">B</div>
+        </div>
+    </div>
+    <!-- sixth example -->
+    <h1>flex direction column</h1>
+    <div class="column equal-height-container">
+        <div class="first">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quasi similique amet voluptatem molestiae nostrum
+                ab nesciunt blanditiis repellendus quos, sequi sunt, dolorem quis facilis mollitia nemo modi doloribus quo.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quisquam, veritatis ducimus, vero magnam hic
+                quia pariatur asperiores laudantium quod nobis perspiciatis, expedita quo reprehenderit quasi iusto ullam
+                error reiciendis.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quasi similique amet voluptatem molestiae nostrum
+                ab nesciunt blanditiis repellendus quos, sequi sunt, dolorem quis facilis mollitia nemo modi doloribus quo.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quisquam, veritatis ducimus, vero magnam hic
+                quia pariatur asperiores laudantium quod nobis perspiciatis, expedita quo reprehenderit quasi iusto ullam
+                error reiciendis.</p>
+        </div>
+
+        <div class="second">
+            <div class="second-a">A</div>
+            <div class="second-b">B</div>
+        </div>
+    </div>
+
+    <!-- sixth example -->
+    <h1>flex direction column reverse</h1>
+    <div class="column-reverse equal-height-container">
+        <div class="first">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quasi similique amet voluptatem molestiae nostrum
+                ab nesciunt blanditiis repellendus quos, sequi sunt, dolorem quis facilis mollitia nemo modi doloribus quo.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quisquam, veritatis ducimus, vero magnam hic
+                quia pariatur asperiores laudantium quod nobis perspiciatis, expedita quo reprehenderit quasi iusto ullam
+                error reiciendis.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quasi similique amet voluptatem molestiae nostrum
+                ab nesciunt blanditiis repellendus quos, sequi sunt, dolorem quis facilis mollitia nemo modi doloribus quo.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quisquam, veritatis ducimus, vero magnam hic
+                quia pariatur asperiores laudantium quod nobis perspiciatis, expedita quo reprehenderit quasi iusto ullam
+                error reiciendis.</p>
+        </div>
+
+        <div class="second">
+            <div class="second-a">A</div>
+            <div class="second-b">B</div>
+        </div>
+    </div>
+
+    <h1>align-self</h1>
+    <div class="flex-container">
+        <div class="flex-item item1">flex-start</div>
+        <div class="flex-item item2">flex-end</div>
+        <div class="flex-item item3">center</div>
+        <div class="flex-item item4">baseline</div>
+        <div class="flex-item item5">stretch</div>
+    </div>
+</body>
+
+</html>
